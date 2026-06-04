@@ -1,27 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx tsc *)",
-      "Bash(npx prisma *)",
-      "Bash(npm install *)",
-      "Bash(npx envinfo *)",
-      "Bash(yarn add *)",
-      "Bash(yarn build *)",
-      "Bash(timeout 10 npm run start:dev)",
-      "Bash(npm run *)",
-      "Bash(curl -s http://localhost:3001/health)",
-      "Bash(pkill -f \"nest start\")",
-      "Bash(psql -U candraherdiana -h localhost -d crypto-signal-bot -c \"SELECT email, name, role FROM users WHERE email = 'admin@mail.com'\")",
-      "Bash(lsof -ti:3002)",
-      "Bash(xargs kill *)",
-      "WebSearch",
-      "Bash(npx tsx *)",
-      "Bash(npx ts-node *)",
-      "Bash(psql -h localhost -p 5432 -U candraherdiana -d crypto-signal-bot -f \"/Users/candraherdiana/Documents/WebDevelopment/Personal/Trading Alert/coinglass-screening-system/prisma/seed-default-presets.sql\")",
-      "Bash(grep -A 50 'export type $ScreeningConfigPayload' '/Users/candraherdiana/Documents/WebDevelopment/Personal/Trading Alert/coinglass-screening-system/src/generated/prisma/client/models/ScreeningConfig.ts')",
-      "mcp__mcp-server-context7__resolve-library-id",
       "mcp__web-reader__webReader",
-      "mcp__context7__resolve-library-id",
       "mcp__context7__query-docs"
     ]
   }
