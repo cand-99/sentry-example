@@ -1,3 +1,17 @@
+/**
+ * app/sentry-example-page/page.tsx — Halaman demo bawaan Sentry SDK
+ *
+ * Halaman ini di-generate oleh Sentry wizard saat pertama kali setup.
+ * Digunakan untuk memverifikasi bahwa Sentry SDK terhubung dengan benar.
+ *
+ * Fitur:
+ *   - Tombol "Throw Sample Error" untuk mengirim error test ke Sentry
+ *   - Pengecekan konektivitas SDK (apakah Sentry server reachable)
+ *   - Mengirim error ke API route /api/sentry-example-api (server-side)
+ *   - Mengirim error dari client-side (browser)
+ *
+ * Jika ad-blocker aktif, konektivitas bisa terblokir dan error tidak terkirim.
+ */
 "use client";
 
 import * as Sentry from "@sentry/nextjs";

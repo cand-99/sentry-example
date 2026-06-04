@@ -1,9 +1,18 @@
+/**
+ * next.config.ts — Konfigurasi Next.js yang di-wrap oleh Sentry
+ *
+ * `withSentryConfig` membungkus konfigurasi Next.js standar dan menambahkan:
+ *   - Automatic source maps upload ke Sentry (untuk stack trace yang readable)
+ *   - Performance monitoring integration
+ *   - Automatic Vercel Cron Monitors
+ *   - Tree-shaking untuk mengurangi bundle size
+ *
+ * Pastikan SENTRY_AUTH_TOKEN sudah diset di CI/CD untuk upload source maps.
+ */
 import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const nextConfig: NextConfig = {};
 
 export default withSentryConfig(nextConfig, {
   // For all available options, see:
